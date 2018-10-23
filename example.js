@@ -1,6 +1,6 @@
 const thousandAwesomeThings = require('./index');
 
-thousandAwesomeThings.getAwesomeOfTheDay()
+thousandAwesomeThings.getAwesomeOfTheDayUrl()
     .then(awesome => {
         console.log(awesome);
     })
