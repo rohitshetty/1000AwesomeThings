@@ -2,7 +2,7 @@ const rp = require('request-promise');
 const cheerio = require('cheerio');
 
 
-module.exports.getAwesomeOfTheDay = () => {
+module.exports.getAwesomeOfTheDayUrl = () => {
 
     const options = {
         uri: 'http://1000awesomethings.com/',
