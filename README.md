@@ -7,7 +7,7 @@ This internally uses request-promise and cheerio to download the page and grab t
 ### API
 
 - `getAwesomeOfTheDayUrl`
-    Get the url to the Awesomeness of the day. This fetches the home page internally and finds the most recent post and returns its url.
+    Get the url to the Awesomeness of the day. This fetches the home page internally and finds the most recent post and returns its url and title.
 
 Usage:
 
@@ -16,6 +16,7 @@ const thousandAwesomeThings = require('./index');
 
 thousandAwesomeThings.getAwesomeOfTheDayUrl()
     .then(awesome => {
+        // awesome -> {title: 'Title of the Awesomeness', url: 'url of the awesomeoness'}
         console.log(awesome);
     });
 
